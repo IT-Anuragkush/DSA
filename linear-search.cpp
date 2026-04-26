@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int linearSearch(vector<int> &arr, int target)
+{
+  for (int i = 0; i <= arr.size(); i++)
+  {
+    if (arr[i] == target)
+    {
+      return i;
+    }
+  }
+  return -1;
+}
+
+int main()
+{
+  vector<int> arr = {20, 50, 60, 90, 80, 50};
+  int target = 80;
+
+  int index = linearSearch(arr, target);
+
+  if (index != -1)
+  {
+    cout <<"Element found at index : " << index << endl;
+  }
+  else
+    cout <<"Element not found : ";
+
+  return 0;
+}
