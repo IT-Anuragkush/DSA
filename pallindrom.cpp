@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-bool palindromcheck(vector<int> &arr)
+int palindromcheck(vector<int> &arr)
 {
   int s = 0;
   int e = arr.size() - 1;
