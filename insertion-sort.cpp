@@ -1,3 +1,10 @@
+// Algorithm : 
+// 1. Second element se start karo.
+// 2. Current element ko key maan lo.
+// 3. Previous sorted part me uski correct position find karo.
+// 4. Bade elements ko right shift karo.
+// 5. key ko insert karo.
+
 #include <iostream>
 using namespace std;
 
@@ -45,6 +52,7 @@ int main()
 
   insertionSort(arr, n);
 
+  cout << "array after sort " << endl;
   for(int i = 0; i < n; i++)
   {
     cout << arr[i] << " ";

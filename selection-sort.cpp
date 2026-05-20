@@ -1,3 +1,9 @@
+// Algorithm : 
+// 1. Array ka smallest element find karo.
+// 2. Use first position se swap karo.
+// 3. Fir second position ke liye repeat karo.
+// 4. Ye process end tak chalta hai.
+
 #include <iostream>
 using namespace std;
 

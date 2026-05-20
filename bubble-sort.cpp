@@ -1,3 +1,9 @@
+// Algorithm : 
+// 1. Adjacent elements compare karo.
+// 2. Agar wrong order me hain to swap karo.
+// 3. Har pass me largest element end me fix ho jata hai.
+// 4. Process repeat karo.
+
 #include <iostream>
 using namespace std;
 
