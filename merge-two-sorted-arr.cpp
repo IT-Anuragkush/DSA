@@ -17,7 +17,7 @@ public:
     {
       if( nums1[i] <= nums2[j])
       {
-        nums3.push_back(nums1[i]);
+        nums3.push_back(nums1[i]);  // nums[k] = nums[i]
         // k++;
         i++;
       }

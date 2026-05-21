@@ -12,26 +12,27 @@ void insertionSort(int arr[], int n)
 {
   for(int i = 0; i < n; i++)
   {
-    int currelem = arr[i];
-    int j = i;
 
-    while (j > 0 && arr[j-1] > currelem)
+    // int currelem = arr[i];
+    // int j = i;
+
+    // while (j > 0 && arr[j-1] > currelem)
+    // {
+    //   arr[j] = arr[j-1];
+    //   j--;
+    // }
+    // arr[j] = currelem;
+
+
+    int temp = arr[i];
+    int j = i-1;
+
+    while (j >= 0 && arr[j] > temp)
     {
-      arr[j] = arr[j-1];
+      arr[j+1] = arr[j];
       j--;
     }
-    arr[j] = currelem;
-
-
-    // int curr = arr[i];
-    // int prev = i-1;
-
-    // while (prev >= 0 && arr[prev] > curr)
-    // {
-    //   arr[prev+1] = arr[prev];
-    //   prev--;
-    // }
-    // arr[prev+1] = curr;   //placing the curr ele in it correct positiion
+    arr[j+1] = temp;   //placing the curr ele in it correct positiion
     
 
 
