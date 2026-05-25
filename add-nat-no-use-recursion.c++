@@ -5,9 +5,9 @@ int sum(int n)
 {
   if(n == 0)
   {
-    return 0;
+    return 0;   // return 1 for factorial
   }
-  return n + sum(n-1);
+  return n + sum(n-1);  // return n * sum(n-1); for factorial
 
 }
 int main()

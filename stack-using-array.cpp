@@ -5,12 +5,12 @@ using namespace std;
 class Stack
 {
   int arr[cap];
-  int peak;
+  int peak;   // int count;
 
 public:
   Stack()
   {
-    peak = -1;
+    peak = -1;   // count = 0;  // or
   }
 
   bool empty();   // return true if array is empty
@@ -80,21 +80,21 @@ int Stack :: size()
 }
 
 
-// int main()
-// {
-//   Stack st;
+int main()
+{
+  Stack st;
 
-//   st.push(10);
-//   st.push(20);
-//   st.push(30);
-//   st.push(40);
-//   st.push(50);
-//   // st.push(60);   // stack is overflow
+  st.push(10);
+  st.push(20);
+  st.push(30);
+  st.push(40);
+  st.push(50);
+  // st.push(60);   // stack is overflow
 
-//   cout << "top element of the stack : " << st.top() << endl;  // 50
-//   st.pop();
-//   cout << "top element of the stack : " << st.top() << endl;  // 40
-//   st.push(60);
-//   // st.push(70);   // stack is overflow
-//   cout << "top element of the stack : " << st.top() << endl;  // 60
-// }
+  cout << "top element of the stack : " << st.top() << endl;  // 50
+  st.pop();
+  cout << "top element of the stack : " << st.top() << endl;  // 40
+  st.push(60);
+  // st.push(70);   // stack is overflow
+  cout << "top element of the stack : " << st.top() << endl;  // 60
+}

@@ -7,7 +7,7 @@ int count3Divisors(int N)
 
   for (int j = 1; j <= N; j++)
   {
-    if (N % j == 0)
+    if (N % j == 0)  //three divisors num - 4,9,25,49
     {
       divisors++;
     }
