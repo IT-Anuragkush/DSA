@@ -94,27 +94,27 @@ int Queue::size()
 }
 
 
-// int main()
-// {
-//   Queue q;
+int main()
+{
+  Queue q;
 
-//   q.push(10);
-//   q.push(20);
-//   q.push(30);
-//   q.push(40);
-//   q.push(50);
+  q.push(10);
+  q.push(20);
+  q.push(30);
+  q.push(40);
+  q.push(50);
 
-//   cout << "front element :" << q.front() <<endl;
-//   cout << "bach element :" << q.back() <<endl;
+  cout << "front element :" << q.front() <<endl;
+  cout << "bach element :" << q.back() <<endl;
   
-//   q.pop();
+  q.pop();
   
-//   cout << "front element :" << q.front() <<endl;
-//   cout << "bach element :" << q.back() <<endl;
+  cout << "front element :" << q.front() <<endl;
+  cout << "bach element :" << q.back() <<endl;
   
-//   q.push(60);
+  q.push(60);
 
-//   cout << "front element :" << q.front() <<endl;
-//   cout << "bach element :" << q.back() <<endl; // 50 not 60
+  cout << "front element :" << q.front() <<endl;
+  cout << "bach element :" << q.back() <<endl; // 50 not 60
 
-// }
+}
